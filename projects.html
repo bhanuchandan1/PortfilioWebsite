@@ -8,7 +8,6 @@
 </head>
 <body>
     <header>
-        
         <img src="images/logo.jpg" alt="Bhanu Chandan Logo" class="logo">
         <h1>Bhanu Chandan Machenahalli Vishweswaraiah</h1>
         <p>Data Analyst & Engineer | Data-Driven Decision Maker | Passionate Cricketer</p>
@@ -69,6 +68,55 @@
                 <li>Maintained and improved daily IT tasks related to database management.</li>
                 <li>Used Python for data transformation to ensure data accuracy and relevance.</li>
             </ul>
+        </div>
+        <div class="project">
+            <h3>🚀 Excited to share my latest project! 🎧📊</h3>
+            <p>I've built a comprehensive ETL (Extract, Transform, Load) pipeline using AWS services to process data from the Spotify API. This project leverages several AWS technologies to extract data, transform it into a structured format, and make it ready for analysis. Here’s a quick overview:</p>
+            <h4>Project Overview</h4>
+            <ul>
+                <li><strong>Extract:</strong></li>
+                <ul>
+                    <li>Spotify API: Source of raw data.</li>
+                    <li>AWS Lambda (Data Extraction): Extracts data from the Spotify API every minute, triggered by Amazon CloudWatch.</li>
+                    <li>Amazon S3 (Raw Data): Stores the extracted raw data.</li>
+                </ul>
+                <li><strong>Transform:</strong></li>
+                <ul>
+                    <li>AWS Lambda (Data Transformation): Processes and transforms the raw data, saving it into a structured format in S3.</li>
+                    <li>Amazon S3 (Transformed Data): Stores the transformed data ready for analysis.</li>
+                </ul>
+                <li><strong>Load:</strong></li>
+                <ul>
+                    <li>AWS Glue Crawler: Infers the schema of the transformed data and updates the AWS Glue Data Catalog.</li>
+                    <li>AWS Glue Data Catalog: Stores the schema and metadata.</li>
+                    <li>Amazon Athena: Allows SQL querying and analysis of the transformed data.</li>
+                </ul>
+            </ul>
+            <h4>Technologies Used</h4>
+            <ul>
+                <li>AWS Lambda for serverless compute</li>
+                <li>Amazon S3 for data storage</li>
+                <li>Amazon CloudWatch for triggering and monitoring</li>
+                <li>AWS Glue for data cataloging and schema inference</li>
+                <li>Amazon Athena for data analysis</li>
+            </ul>
+            <h4>Key Features</h4>
+            <ul>
+                <li>Automated data extraction from Spotify API</li>
+                <li>Real-time data transformation and storage in S3</li>
+                <li>Schema inference and cataloging with AWS Glue</li>
+                <li>SQL-based data analysis using Amazon Athena</li>
+            </ul>
+            <h4>How It Works</h4>
+            <ul>
+                <li>Data Extraction: A CloudWatch rule triggers the data extraction Lambda function, which fetches data from the Spotify API and stores it in S3.</li>
+                <li>Data Transformation: An S3 event triggers the data transformation Lambda function, which processes the raw data, saves the transformed data, and moves the processed files to avoid reprocessing.</li>
+                <li>Data Loading: An AWS Glue Crawler updates the Data Catalog with the schema of the transformed data, making it available for querying in Athena.</li>
+            </ul>
+            <h4>Project Repository</h4>
+            <p>Check out the complete project on GitHub: <a href="YOUR_GITHUB_REPOSITORY_URL">GitHub Repository</a></p>
+            <p>Feel free to explore the code, and let me know your thoughts or any suggestions for improvement!</p>
+            <p>#AWS #DataEngineering #SpotifyAPI #ETL #CloudComputing #Serverless #DataPipeline #BigData #DataAnalysis</p>
         </div>
     </section>
     <footer>
